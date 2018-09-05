@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
    <PropertyGroup>
       <TargetFrameworks>net45;net46</TargetFrameworks>
@@ -8,6 +8,9 @@
       <PackageIconUrl>https://raw.githubusercontent.com/mcdis/SharpChakra/master/icon.png</PackageIconUrl>
       <Description>Slim managed any cpu .net wrapper of Microsoft.ChakraCore. Extensions</Description>
       <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+      <SignAssembly>true</SignAssembly>
+      <AssemblyOriginatorKeyFile>..\sharpchakra.snk</AssemblyOriginatorKeyFile>
+      <PackageId>SharpChakra.Extensions.Signed</PackageId>
    </PropertyGroup>
 
    <ItemGroup>
